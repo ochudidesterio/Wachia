@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clientDetailsActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/luggage"
+    tools:context=".details_activity">
+
+    <TextView
+        android:id="@+id/clientTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="CLIENT DETAILS"
+        android:textColor="#FFF"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/IDtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clientTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/client_edittext_background"
+        android:ems="10"
+        android:hint="ID Number"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/phoneNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IDtextview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/client_edittext_background"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/emailtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneNumberTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/client_edittext_background"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/DescriptionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailtextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/client_edittext_background"
+        android:ems="10"
+        android:hint="Luggage Description"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DescriptionView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/client_edittext_background"
+        android:text="SUBMIT" />
+</RelativeLayout>
