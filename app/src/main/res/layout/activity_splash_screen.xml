@@ -24,7 +24,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="WACHIA"
-        android:textColor="@color/black"
+        android:textColor="@color/blue"
         android:textSize="25sp"
         android:textStyle="bold|italic" />
 </RelativeLayout>
