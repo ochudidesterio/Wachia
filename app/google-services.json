@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "465207106486",
+    "firebase_url": "https://wachiacase.firebaseio.com",
+    "project_id": "wachiacase",
+    "storage_bucket": "wachiacase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465207106486:android:016b2e0f3c24afb53cff17",
+        "android_client_info": {
+          "package_name": "com.example.wachia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465207106486-a71onrmkdpgmo8otgl94kf0t2o6ggp4u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wachia",
+            "certificate_hash": "ce9cecc28919f73dce40aea226d7c38df9cc3521"
+          }
+        },
+        {
+          "client_id": "465207106486-rtnk3bm1o6j27c1n764n6hdg052dmbq4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDixrCPyzAH0hf0OdyVrUlLRl5ekWFDNT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "465207106486-rtnk3bm1o6j27c1n764n6hdg052dmbq4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
