@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/luggage"
-    tools:context=".details_activity">
+    tools:context=".entityService.ClientDetails">
 
     <TextView
         android:id="@+id/clientTextView"
@@ -77,4 +77,5 @@
         android:layout_marginTop="50dp"
         android:background="@drawable/client_edittext_background"
         android:text="SUBMIT" />
+
 </RelativeLayout>

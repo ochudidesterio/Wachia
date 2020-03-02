@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Drawer"
+            android:name=".navigationMenu.NavigationDrawerMenu"
             android:parentActivityName=".MainActivity">
 
             <meta-data
@@ -34,7 +34,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".details_activity">
+            android:name=".entityService.ClientDetails">
 
 
             <intent-filter>

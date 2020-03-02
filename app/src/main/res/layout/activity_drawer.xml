@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawermenu"
-    tools:context=".Drawer">
+    tools:context=".navigationMenu.NavigationDrawerMenu">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:background="@color/lightblue"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/nav_fragment_container">
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -20,6 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/white"
+        android:id="@+id/nav_view"
         app:itemTextColor="@color/darkggray"
         app:itemIconTint="@color/darkggray"
         app:menu="@menu/drawermenu"

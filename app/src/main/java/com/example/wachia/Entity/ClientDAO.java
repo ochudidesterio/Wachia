@@ -1,13 +1,13 @@
-package com.example.wachia;
+package com.example.wachia.Entity;
 
-public class Client {
+public class ClientDAO {
     private int IdNumber;
     private int PhoneNumber;
     private String Email;
     private String Description;
 
 
-    public Client() {
+    public ClientDAO() {
     }
 
     public int getIdNumber() {
