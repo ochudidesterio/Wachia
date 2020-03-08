@@ -1,8 +1,10 @@
-package com.example.wachia;
+package com.example.wachia.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.wachia.R;
 
 public class Scanner extends AppCompatActivity {
 

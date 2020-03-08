@@ -13,7 +13,7 @@ import com.example.wachia.R;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-//import static com.example.wachia.MainActivity.myDataBaseHelper;
+//import static com.example.wachia.Activity.MainActivity.myDataBaseHelper;
 
 public class ClientDetails extends AppCompatActivity {
     EditText idnumber,phonenumber,email,description;

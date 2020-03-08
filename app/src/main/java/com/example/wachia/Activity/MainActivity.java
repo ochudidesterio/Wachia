@@ -1,28 +1,23 @@
-package com.example.wachia;
+package com.example.wachia.Activity;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.wachia.R;
 import com.example.wachia.navigationMenu.NavigationDrawerMenu;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 
-import static com.example.wachia.SignUp.firebaseAuth;
+import static com.example.wachia.Activity.SignUp.firebaseAuth;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -112,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
     switch (v.getId()){
         case R.id.create_account_button:
-            startActivity( new Intent(this,SignUp.class));
+            startActivity( new Intent(this, SignUp.class));
             break;
         case R.id.login_button:
                 onClickingLoginButton();

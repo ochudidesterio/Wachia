@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.wachia.Activity.QrCode;
 import com.example.wachia.Entity.ClientDAO;
 import com.example.wachia.R;
 import com.example.wachia.entityService.ClientDetails;
@@ -33,7 +34,7 @@ public class NavigationDrawerMenu extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener,ScanFragment.onFragmentScanButtonSelected,ClientFragment.onClientSubmitSelected {
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle actionBarDrawerToggle;
-   public EditText idnumber,phonenumber,email,description;
+   public static EditText idnumber,phonenumber,email,description;
    public static DatabaseReference databaseReference;
    public static ClientDAO clientDAO;
 
@@ -128,12 +129,20 @@ public class NavigationDrawerMenu extends AppCompatActivity implements
 
         databaseReference.push().setValue(clientDAO);
 
+//        idnumber.setText(null);
+//        phonenumber.setText(null);
+//        email.setText(null);
+//        description.setText(null);
+
+        Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(NavigationDrawerMenu.this, QrCode.class);
+        startActivity(intent);
+
         idnumber.setText(null);
         phonenumber.setText(null);
         email.setText(null);
         description.setText(null);
-
-        Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
 
     }
 }

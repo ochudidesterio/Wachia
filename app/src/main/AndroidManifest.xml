@@ -9,13 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SignUp"></activity>
+        <activity android:name=".Activity.QrCode" android:parentActivityName=".navigationMenu.NavigationDrawerMenu">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".navigationMenu.NavigationDrawerMenu"/>
+        </activity>
+        <activity android:name=".Activity.SignUp" />
         <activity
             android:name=".navigationMenu.NavigationDrawerMenu"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".Activity.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".Activity.MainActivity" />
 
             <intent-filter>
                 <action android:name=".Drawer" />
@@ -23,8 +28,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Scanner"></activity>
-        <activity android:name=".SplashScreen">
+        <activity android:name=".Activity.Scanner" />
+        <activity android:name=".Activity.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,7 +43,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Activity.MainActivity" />
     </application>
 
 </manifest>

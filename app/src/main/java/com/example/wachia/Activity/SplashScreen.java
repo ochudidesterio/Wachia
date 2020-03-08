@@ -1,4 +1,4 @@
-package com.example.wachia;
+package com.example.wachia.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.example.wachia.R;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -34,7 +36,7 @@ public class SplashScreen extends AppCompatActivity {
             }catch (InterruptedException e){
                 e.printStackTrace();
             }
-            Intent intent = new Intent(SplashScreen.this,MainActivity.class);
+            Intent intent = new Intent(SplashScreen.this, MainActivity.class);
             startActivity(intent);
             SplashScreen.this.finish();
         }

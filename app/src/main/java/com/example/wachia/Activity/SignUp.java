@@ -1,4 +1,4 @@
-package com.example.wachia;
+package com.example.wachia.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,9 +8,9 @@ import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.example.wachia.R;
 import com.example.wachia.navigationMenu.NavigationDrawerMenu;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -94,7 +94,7 @@ public static FirebaseAuth firebaseAuth= FirebaseAuth.getInstance();
                     registerUser();
                 break;
             case R.id.sign_up_login_button:
-                startActivity(new Intent(this,MainActivity.class));
+                startActivity(new Intent(this, MainActivity.class));
                 break;
         }
 
