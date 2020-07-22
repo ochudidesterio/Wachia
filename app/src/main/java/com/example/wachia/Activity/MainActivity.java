@@ -34,14 +34,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         //getStarted=(Button)findViewById(R.id.getStarted);
-        sign_up=(Button) findViewById(R.id.create_account_button);
-        login= (Button) findViewById(R.id.login_button);
-        LoginPasswordText=(EditText)findViewById(R.id.login_password);
-        LoginEmailText=(EditText)findViewById(R.id.login_email);
+        sign_up=(Button) findViewById(R.id.sign_up_login_button);
+        login= (Button) findViewById(R.id.sign_up_button);
+        LoginPasswordText=(EditText)findViewById(R.id.signup_password);
+        LoginEmailText=(EditText)findViewById(R.id.signup_email);
 
        //OnClickinGstartedButton();
-        findViewById(R.id.create_account_button).setOnClickListener(this);
-        findViewById(R.id.login_button).setOnClickListener(this);
+        findViewById(R.id.sign_up_login_button).setOnClickListener(this);
+        findViewById(R.id.sign_up_button).setOnClickListener(this);
 
 
     }
@@ -88,11 +88,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                  if(task.isSuccessful()){
+                     finish();
                      Intent intent = new Intent(MainActivity.this, NavigationDrawerMenu.class);
                      intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK) ;
                      intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                      startActivity(intent);
-                     finish();
+                     //finish();
 
                  }else {
                      Toast.makeText(getApplicationContext(),task.getException().getMessage(),Toast.LENGTH_LONG).show();
@@ -103,13 +104,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
     }
 
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        if(firebaseAuth.getCurrentUser() != null){
+//            finish();
+//            startActivity(new Intent(this,NavigationDrawerMenu.class));
+//        }
+//    }
+
     @Override
     public void onClick(View v) {
     switch (v.getId()){
-        case R.id.create_account_button:
+        case R.id.sign_up_login_button:
+            finish();
             startActivity( new Intent(this, SignUp.class));
             break;
-        case R.id.login_button:
+        case R.id.sign_up_button:
                 onClickingLoginButton();
             break;
     }

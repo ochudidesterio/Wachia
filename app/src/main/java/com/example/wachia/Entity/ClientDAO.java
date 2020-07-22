@@ -1,8 +1,10 @@
 package com.example.wachia.Entity;
 
 public class ClientDAO {
-    private int IdNumber;
-    private int PhoneNumber;
+    private String IdNumber;
+    private String PhoneNumber;
+    private String CounterNumber;
+
     private String Email;
     private String Description;
 
@@ -10,19 +12,29 @@ public class ClientDAO {
     public ClientDAO() {
     }
 
-    public int getIdNumber() {
+    public String getCounterNumber() {
+        return CounterNumber;
+    }
+
+    public void setCounterNumber(String counterNumber) {
+        CounterNumber = counterNumber;
+    }
+
+
+
+    public String getIdNumber() {
         return IdNumber;
     }
 
-    public void setIdNumber(int idNumber) {
+    public void setIdNumber(String idNumber) {
         IdNumber = idNumber;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return PhoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         PhoneNumber = phoneNumber;
     }
 

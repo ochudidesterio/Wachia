@@ -1,42 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
     android:background="@drawable/customs_background"
+    android:orientation="vertical"
     tools:context=".Activity.SignUp">
 
-    <LinearLayout
+
+
+
+    <RelativeLayout
+
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/wachia"
         android:layout_centerVertical="true"
-        android:orientation="vertical"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp">
+        android:layout_marginTop="20sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/wachia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50sp"
+            android:layout_marginTop="70dp"
+            android:text="Sign Up"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/temail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/wachia"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="30sp"
+            android:text="Email:"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/signup_email"
-            android:layout_width="wrap_content"
+            android:layout_width="300sp"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="false"
+            android:layout_below="@+id/temail"
+
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/client_edittext_background"
+            android:layout_marginLeft="40sp"
+            android:background="@color/gray"
             android:ems="10"
             android:hint="email address"
             android:inputType="textEmailAddress"
             android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/signup_password"
+        <TextView
+            android:id="@+id/ptext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/signup_email"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="20sp"
+            android:text="Password:"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/signup_password"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ptext"
             android:layout_centerHorizontal="false"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/client_edittext_background"
+            android:layout_marginLeft="40sp"
+            android:background="@color/gray"
             android:ems="10"
             android:hint="password"
             android:inputType="textPassword"
@@ -47,25 +92,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/signup_password"
-            android:layout_centerHorizontal="false"
+            android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:text="Sign up" />
+            android:layout_marginTop="20sp"
+            android:text="Sign Up" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_up_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:text="or"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/sign_up_login_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/sign_up_button"
-            android:layout_centerHorizontal="false"
+            android:layout_below="@id/textView4"
+            android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:text="Already registered, Login" />
+            android:layout_marginTop="20dp"
+            android:text="Login" />
 
-    </LinearLayout>
-
-
+    </RelativeLayout>
 
 
-
-</RelativeLayout>
+</LinearLayout>

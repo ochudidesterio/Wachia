@@ -9,10 +9,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.QrCode" android:parentActivityName=".navigationMenu.NavigationDrawerMenu">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".navigationMenu.NavigationDrawerMenu"/>
+        <activity android:name=".Activity.Scan"
+
+
+            android:stateNotNeeded="true"
+            ></activity>
+        <activity android:name=".Activity.ScanResult" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".Activity.QrCode"
+            android:parentActivityName=".navigationMenu.NavigationDrawerMenu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".navigationMenu.NavigationDrawerMenu" />
         </activity>
         <activity android:name=".Activity.SignUp" />
         <activity

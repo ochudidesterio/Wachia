@@ -18,7 +18,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 
-public class SignUp extends AppCompatActivity implements View.OnClickListener {
+public class   SignUp extends AppCompatActivity implements View.OnClickListener {
 
 private EditText SignUpEmailEditText,SignUpPasswordtext;
 
@@ -68,15 +68,17 @@ public static FirebaseAuth firebaseAuth= FirebaseAuth.getInstance();
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-
+                    finish() ;
                     Intent intent = new Intent(SignUp.this, NavigationDrawerMenu.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK) ;
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                     startActivity(intent);
-                    finish();
+                    //finish();
                 }else {
                     if(task.getException() instanceof FirebaseAuthUserCollisionException){
-                        Toast.makeText(getApplicationContext(),"You are already a user",Toast.LENGTH_LONG).show();
+                        SignUpEmailEditText.setError("user exists");
+                        SignUpEmailEditText.requestFocus();
+                        
                     }else {
                         Toast.makeText(getApplicationContext(), task.getException().getMessage(), Toast.LENGTH_LONG).show();
                     }
@@ -94,6 +96,7 @@ public static FirebaseAuth firebaseAuth= FirebaseAuth.getInstance();
                     registerUser();
                 break;
             case R.id.sign_up_login_button:
+                finish();//changes
                 startActivity(new Intent(this, MainActivity.class));
                 break;
         }
