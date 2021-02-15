@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/luggage">
+   <!-- tools:context=".entityService.ClientDetails"-->
+
+    <TextView
+        android:id="@+id/clientTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:text="CUSTOMER DETAILS"
+        android:textColor="#FFF"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="75dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clientTextView"
+        android:layout_marginLeft="54sp"
+        android:layout_marginTop="40sp"
+        android:text="Identification Number"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        />
+
+    <EditText
+        android:id="@+id/IDtextview"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="54sp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="54sp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="number"
+        android:shadowColor="@color/black"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/phoneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IDtextview"
+        android:layout_marginLeft="54sp"
+        android:layout_marginTop="10sp"
+        android:text="Phone Number"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneText"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="54sp"
+        android:layout_marginRight="54sp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneNumber"
+        android:layout_marginLeft="54sp"
+        android:layout_marginTop="10sp"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailText"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="54sp"
+        android:layout_marginRight="54sp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+ <TextView
+        android:id="@+id/CounterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginLeft="54sp"
+        android:layout_marginTop="10sp"
+        android:text="Counter Number"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/counterTextView"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CounterText"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="54sp"
+        android:layout_marginRight="54sp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="number" />
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/counterTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/client_edittext_background"
+        android:text="SUBMIT" />
+
+
+</RelativeLayout>
