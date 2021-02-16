@@ -74,7 +74,7 @@ Private class LogoLauncher extends Thread{
             //task after successfuly login
             }});
   ```
-  <br>
+  
   ``` Java
              firebaseAuth.createUserWithEmailAndPassword(userEmail,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
