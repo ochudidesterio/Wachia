@@ -1,3 +1,32 @@
+## Table of Contents
+
+  - [Wachia](#wachia)
+  - [Prerequisites](#prerequisites)
+  - [Project Flow](#project-flow)
+    - [Splash Screen](#splash-screen)
+    - [Sign In and Sign Up Activities](#sign-in-and-sign-up-screen)
+    - [Navigation Menu](#navigation-menu)
+    - [Client Information](#client-information)
+    - [Sharing the QR Code](#sharing-the-qr-code)
+    - [QR Code Scanning](#qr-code-scanning)
+    - [License](#license)
+
+    
+
+    
+    <br>
+    :point_down: :point_down: :point_down: :point_down: :point_down:
+    
+    <br>
+    
+    
+<img align="center" src="https://forthebadge.com/images/badges/built-for-android.svg" alt="droidconKE2020 built for Android">
+
+
+
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ochudidesterio/Wachia)
+    
+
 # Wachia
 Wachia is an android app that is meant for managing storage facilities and Wachia app aims to improve security aspects as it uses Quick Response Code. As customers arrive with their luggage, their details
 are captured and a quick response code is generated and sent to their respective emails as compared to earlier days where by the customers are given cards. Wachia digitalizes the process and uses firebase 
