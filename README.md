@@ -99,6 +99,11 @@ Private class LogoLauncher extends Thread{
    This activities function to start QR code scanner from the zxing library to scan the result.
    
    ![shareemail](https://github.com/ochudidesterio/Wachia/blob/master/wachia%20images/Scanning.png?raw=true)
+   
+   
+   # License
+
+   [MIT](https://github.com/peterokwara/BuildingManagement/blob/master/LICENSE)
 
    
    
