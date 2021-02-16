@@ -103,7 +103,7 @@ Private class LogoLauncher extends Thread{
    
    # License
 
-   [MIT](https://github.com/peterokwara/BuildingManagement/blob/master/LICENSE)
+   [MIT](https://github.com/ochudidesterio/Wachia/blob/master/LICENSE)
 
    
    
