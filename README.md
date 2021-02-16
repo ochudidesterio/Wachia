@@ -12,7 +12,7 @@ real time database for storage.
 
 # Project Flow
 
-#Splash screen 
+## Splash screen 
 
 This is a launcher activity that runs on a thread.The thread sleeps for 3000 milliseconds after which the main activity of the app is launched.
 
@@ -31,5 +31,18 @@ Private class LogoLauncher extends Thread{
         }
     }
   ```
-  ![Splash](https://github.com/ochudidesterio/GADS-NoteKeeper/blob/master/images/Home.png?raw=true)
+  ![Splash](https://github.com/ochudidesterio/Wachia/blob/master/wachia%20images/Splash%20Screen.png?raw=true)
+  
+  ## Sign In and Sign Up Activities
+  
+  This activities allows the user, in this case the owner of a storage facility, to sign in to his account and if he doesnt have one, he can sign up for an account. This           activities use firebaseAuth to sign in a user or creating a new user
+  
+  ``` Java
+          firebaseAuth.signInWithEmailAndPassword(userEmail,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) { 
+            //task
+            }});
+  ```
+
 
