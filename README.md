@@ -18,7 +18,7 @@ This is a launcher activity that runs on a thread.The thread sleeps for 3000 mil
 
 ``` Java
 
-rivate class LogoLauncher extends Thread{
+Private class LogoLauncher extends Thread{
         public void run(){
             try {
                 sleep(1000*SLEEP_TIMER);
@@ -31,3 +31,5 @@ rivate class LogoLauncher extends Thread{
         }
     }
   ```
+  ![Splash](https://github.com/ochudidesterio/GADS-NoteKeeper/blob/master/images/Home.png?raw=true)
+
